@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">
+<title>Mannil: your E3 interview prep</title>
+<meta property="og:title" content="Mannil: your E3 interview prep"><meta property="og:description" content="What E3 is really testing, how to walk them through your agents, and why you do not need to know freight to win this."><meta property="og:image" content="https://builderownership.com/card.png"><meta property="og:type" content="article"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Mannil: your E3 interview prep"><meta name="twitter:description" content="What E3 is really testing, how to walk them through your agents, and why you do not need to know freight to win this."><meta name="twitter:image" content="https://builderownership.com/card.png">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>:root{--ink:#1f2328;--mute:#5b6470;--teal:#1f6f6e;--rule:#e4e7eb;--soft:#f3f8f8}*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6}main{max-width:720px;margin:0 auto;padding:40px 20px 80px}h1{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:30px;line-height:1.2;margin:0 0 18px}h2{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:21px;margin:30px 0 8px;padding-top:18px;border-top:1px solid var(--rule)}h3{font-size:16px;margin:20px 0 4px;color:var(--teal)}p{margin:0 0 14px}ul,ol{margin:0 0 14px;padding-left:22px}li{margin:0 0 6px}.box{background:var(--soft);border-left:3px solid var(--teal);padding:14px 16px;margin:0 0 16px;border-radius:4px}.mute{color:var(--mute);font-size:15px}table{border-collapse:collapse;width:100%;margin:0 0 16px;font-size:15px}td{border-top:1px solid var(--rule);padding:8px 6px;vertical-align:top}td:first-child{font-weight:600;white-space:nowrap;padding-right:12px}.close{font-family:"Source Serif 4",Georgia,serif;font-style:italic;font-size:19px;margin-top:28px}</style></head>
+<body><main>
+
+<h1>Mannil, here is your prep for E3</h1>
+
+<p>As promised, everything I know about how E3 interviews, in one place. Read it once tonight and once the morning of. It is shorter than it looks.</p>
+
+<div class="box"><strong>First, the worry about the domain.</strong> You do not need to know freight to pass this. E3 is not hiring logistics people. The founders have said plainly that they want scientists: curious, fearless engineers who know exactly what they built and why. Several of their own engineers came in from physics, mechanical and other fields that have nothing to do with trucking. Freight is never named as a requirement for this seat. The domain is something they teach you in your first weeks, sitting next to the customers. What they cannot teach, and what they are actually testing, is how you build an agent and how you prove it works. That part you already do.</div>
+
+<h2>What E3 actually is, in two minutes</h2>
+
+<p>E3 Group is a small applied AI lab, founded by an MIT and Stanford pair, building AI products for the freight world: brokers, shippers and 3PLs (companies that run logistics for others). In their own words they build:</p>
+<ul>
+<li><strong>Voice agents</strong> that call truck carriers to negotiate rates and do check-ins on loads.</li>
+<li><strong>Quote email agents</strong> that read a request for a price and answer it.</li>
+<li><strong>Shield</strong>, which verifies carriers, drivers and equipment and stops fraud, on about 5,000 drivers a day.</li>
+<li><strong>Document and invoice automation</strong>, pulling the right fields out of messy paperwork.</li>
+<li><strong>Model experiments</strong> on quality, speed and cost.</li>
+</ul>
+<p>Look at that list as an engineer, not as a freight person: it is phone agents, email agents, a verification and fraud check, and document extraction. You have seen every one of those shapes before. Only the nouns are new.</p>
+
+<h2>The ten words that make you sound at home</h2>
+<p>You do not need more than this. Drop one or two naturally and they will hear someone who did his homework.</p>
+<table>
+<tr><td>Shipper</td><td>The company with goods to move.</td></tr>
+<tr><td>Carrier</td><td>The trucking company (often a single owner driver) that moves them.</td></tr>
+<tr><td>Broker</td><td>The middleman who finds a carrier for the shipper's load and takes a margin. Many of E3's customers are brokers.</td></tr>
+<tr><td>3PL</td><td>A third party logistics company that runs shipping for other businesses.</td></tr>
+<tr><td>Load</td><td>One shipment, one job for a truck.</td></tr>
+<tr><td>Rate</td><td>The price agreed for a load. Brokers negotiate it with carriers, which is what the voice agents do.</td></tr>
+<tr><td>Check call</td><td>Calling the driver to ask where the load is and when it will arrive. Boring, constant, perfect for an agent.</td></tr>
+<tr><td>BOL / POD</td><td>Bill of lading (the shipment paperwork) and proof of delivery. The documents the extraction work reads.</td></tr>
+<tr><td>Double brokering</td><td>A fraud where a fake or stolen carrier identity takes a load and hands it off, or steals it. This is what Shield is built to catch.</td></tr>
+<tr><td>MC / DOT number</td><td>The government IDs a US carrier operates under; the starting point of any carrier check.</td></tr>
+</table>
+<p class="mute">If they ask something deep about freight, the strongest answer is honest: "I have not worked in freight. Here is how I would learn the failure cases from your customers in the first two weeks." That is exactly the attitude they hire for.</p>
+
+<h2>What they are really testing</h2>
+<p>From the candidates I have sent through, the same thing decides almost every round. It is not React, and it is not freight. It is this:</p>
+<div class="box"><strong>Can you build an agent and prove it is right, without anyone asking you to?</strong></div>
+<p>Nearly every person who was cut in the interviews was cut on the same point: they built agents, but when asked how they knew the agent worked, the answer stayed general ("we tested it", "we monitored it", "the team handled evals"). The people who move forward talk about it concretely and in the first person.</p>
+
+<h3>The one big thing about their style</h3>
+<p>E3 does not prod. The interviewers stay quiet and wait to see whether you take the lead and walk them through your own work. They read that as someone who can work without a spec. <strong>If there is silence, that is the test, not a lack of interest.</strong> Fill it with your work.</p>
+
+<h2>Your opening: one agent, start to finish, unprompted</h2>
+<p>Pick the one agent you built that you know best. Prepare to walk them through it in about five minutes, in this order, without waiting for questions:</p>
+<ol>
+<li><strong>The problem and the user.</strong> Who used it, what it replaced, what a wrong answer cost them.</li>
+<li><strong>How it works.</strong> The model, the tools it calls, the state it keeps, what happens when it is unsure. Say "I built", "I decided", not "we".</li>
+<li><strong>How you knew it worked: the eval loop.</strong> This is the heart of it. See the next section.</li>
+<li><strong>What broke in production and what you changed.</strong> One real failure and the fix.</li>
+<li><strong>The numbers.</strong> Volume, latency, cost, accuracy before and after. Be ready to say how each number was measured.</li>
+</ol>
+
+<h2>The eval loop, the way they want to hear it</h2>
+<p>Go through each of these for your agent. If you did not do one of them, say how you would, concretely. Specific beats perfect.</p>
+<ul>
+<li><strong>A test set built from real cases.</strong> Where the cases came from (production logs, customer complaints, edge cases you wrote), how many, and how new failures get added to it.</li>
+<li><strong>Clear expected outcomes.</strong> For each case, what correct looks like: the final answer, and also the right tool calls in the right order with the right arguments.</li>
+<li><strong>Checking the tool calls and state, not just the final text.</strong> Did the agent call the lookup? Did it handle the lookup failing? Did it end in the right state?</li>
+<li><strong>A failure list.</strong> The ways it goes wrong, named: wrong tool, made up a fact, gave up too early, did not notice the user said no, looped.</li>
+<li><strong>A pass line.</strong> A threshold, for example "95 percent on the core set and zero failures on the critical cases", and the rule that nothing ships below it.</li>
+<li><strong>If you used a model as a judge:</strong> how you checked the judge against human labels so you could trust its scores.</li>
+<li><strong>Prompt and model changes are versioned</strong> and can be rolled back if the scores drop.</li>
+</ul>
+
+<h3>Practice it on their world</h3>
+<p>Here is a likely style of question, and the shape of a strong answer. Say it out loud once.</p>
+<div class="box"><strong>"How would you test a voice agent that does check calls with drivers?"</strong><br><br>
+Build 50 to 100 real or realistic calls. For each one, write the expected result: the arrival time captured correctly, the load record updated, the right follow up triggered. Include the hard ones on purpose: the driver does not pick up, the driver refuses to answer, the load lookup fails, the driver gives a vague time ("later today"), the driver says there is a problem with the truck. Check that the agent called the right tools and ended in the right state, not only that it sounded polite. Set the pass line, block any release below it, and every failed call from production goes back into the set.</div>
+<p>Notice that answer needs no freight knowledge at all. It is the same method you use anywhere. That is the point: your skill carries straight over.</p>
+
+<h2>The other things they check</h2>
+<h3>How you work with coding agents</h3>
+<p>They expect you to use coding agents every day. Be ready to name your tools, give one example of running several in parallel, and, most important, say how you check what they wrote. In one exercise you may be asked to review a large change written by an agent. Do not just start reading it. First say your plan: what the change must do (acceptance criteria), what you will check first, which risks you look for, and what tests must pass before you approve it.</p>
+
+<h3>The "you are blocked" question</h3>
+<p>They like to ask what you do when a task is blocked close to a deadline. The answer they want is concrete: tell the person who owns the blocker early, say what it does to the deadline, ask for a decision with options, and keep the rest of the work moving meanwhile.</p>
+
+<h3>LLMs as a product</h3>
+<p>Have one customer facing feature ready where you used an LLM through an API, with the trade-offs you made on latency, cost and user experience, with real numbers. If you mention an improvement (say, from 2 seconds to 500 milliseconds), know exactly how you measured it and what caused it. They will ask.</p>
+
+<h2>Why you can walk in confident</h2>
+<ul>
+<li>They are not looking for a freight expert. They are looking for a builder who can learn fast, and their own team proves it: people from science and engineering backgrounds far from logistics.</li>
+<li>Everything they build has a shape you already know: agents on calls and email, verification, document extraction, a React screen for the customer.</li>
+<li>The thing that decides the interview is your method for proving an agent works. That method is the same in freight, healthcare or finance. It is yours already.</li>
+<li>You know the one trap most candidates fall into (waiting to be asked, staying vague about testing), so you will not fall into it.</li>
+</ul>
+
+<h2>Your checklist for the day</h2>
+<ol>
+<li>One agent you built, ready to walk through in five minutes, unprompted.</li>
+<li>Its eval loop: test set, expected results, tool and state checks, failure list, pass line.</li>
+<li>One production failure and the fix.</li>
+<li>Your numbers, and how each was measured.</li>
+<li>Your coding agent workflow and how you verify their output.</li>
+<li>Your plan for reviewing a big change, and for a blocked task.</li>
+<li>Two or three of the freight words above, and one honest line about how you would learn the rest.</li>
+<li>One good question for them, for example: "Which agent failure costs your customers the most today?"</li>
+</ol>
+
+<p class="close">You were put forward because your work fits this seat. Lead with what you built, show how you proved it, and the domain will take care of itself. Message me after the call and tell me how it went.</p>
+<p>Shala</p>
+
+</main></body></html>
