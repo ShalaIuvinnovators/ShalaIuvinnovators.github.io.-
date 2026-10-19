@@ -1,0 +1,138 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">
+<title>Circle, the full picture</title>
+<meta property="og:title" content="Circle, the full picture"><meta property="og:description" content="How the Circle Staff package is built: base, bonus and sellable stock, the four year total, and how to handle the equity you leave behind."><meta property="og:image" content="https://builderownership.com/card.png"><meta property="og:type" content="article"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Circle, the full picture"><meta name="twitter:description" content="How the Circle Staff package is built: base, bonus and sellable stock, the four year total, and how to handle the equity you leave behind."><meta name="twitter:image" content="https://builderownership.com/card.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: a plain letter. One column on a phone, a comfortable reading measure on a desk. */
+:root{
+  --bg:#ffffff;
+  --fg:#1f2a2e;
+  --muted:#5b6b70;
+  --rule:#d9e2e4;
+  --accent:#1d6f6a;
+  --accent-soft:#eaf3f2;
+  --serif:'Lora',Georgia,'Times New Roman',serif;
+  --sans:'Source Sans 3','Segoe UI',Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#141b1d; --fg:#e6ecee; --muted:#9fb0b5; --rule:#2b373b; --accent:#5fb8b1; --accent-soft:#1c2a2c; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141b1d; --fg:#e6ecee; --muted:#9fb0b5; --rule:#2b373b; --accent:#5fb8b1; --accent-soft:#1c2a2c; color-scheme:dark;
+}
+body{
+  background:var(--bg); color:var(--fg); font-family:var(--sans); font-size:1.05rem; line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px)); padding-right:max(16px,env(safe-area-inset-right,0px)); padding-block:2.5rem 4rem;
+}
+.letter{max-width:42rem; margin:0 auto;}
+h1,h2{font-family:var(--serif); font-weight:500; text-wrap:balance; margin:0;}
+h1{font-size:1.9rem; line-height:1.2; margin-bottom:1rem;}
+h2{font-size:1.3rem; margin:0 0 .75rem;}
+p{margin:0 0 1rem;}
+section{padding:1.5rem 0; border-top:1px solid var(--rule);}
+section:first-of-type{border-top:0; padding-top:0;}
+ul{margin:0 0 1rem 1.2rem; padding:0;}
+li{margin-bottom:.5rem;}
+.lead{font-size:1.12rem;}
+.note{color:var(--muted); font-size:.95rem;}
+.tablewrap{overflow-x:auto; margin:0 0 1rem;}
+table{border-collapse:collapse; width:100%; min-width:26rem; font-variant-numeric:tabular-nums;}
+th,td{text-align:left; padding:.55rem .6rem; border-bottom:1px solid var(--rule); vertical-align:top;}
+th{font-weight:600; color:var(--muted); font-size:.9rem; letter-spacing:.02em; text-transform:uppercase;}
+td.num,th.num{text-align:right; white-space:nowrap;}
+tr.total td{font-weight:600; border-bottom:2px solid var(--accent);}
+.callout{background:var(--accent-soft); border-left:3px solid var(--accent); padding:.9rem 1rem; margin:0 0 1rem; border-radius:0 4px 4px 0;}
+.callout p:last-child{margin-bottom:0;}
+em{font-style:italic;}
+.close{font-family:var(--serif); font-size:1.15rem; margin-top:1rem;}
+</style>
+</head><body>
+
+<div class="letter">
+<section>
+  <h1>Scott,</h1>
+  <p class="lead">You said the base at Circle does not look like a step up, and you are right to look at the base first. But at Circle the base is one of three parts, and the other two are where the money sits. This page lays all three out so you can see the whole number before you decide anything.</p>
+</section>
+
+<section>
+  <h2>How to read a Circle offer</h2>
+  <p>A Staff engineer at Circle is paid in three pieces:</p>
+  <ul>
+    <li><strong>Base salary.</strong> For the Staff seat this goes up to $275,000.</li>
+    <li><strong>Annual bonus.</strong> A target of 10 to 15 percent of base, paid in cash.</li>
+    <li><strong>Stock, as restricted stock units.</strong> A grant of $500,000 to $800,000, vesting over four years. Circle has said this part is flexible for the right person, and grants in this seat have gone higher.</li>
+  </ul>
+  <p>The piece most people underweight is the stock, because at most startups stock is paper. At Circle it is not. Circle is a public company listed on the New York Stock Exchange, so every piece of the grant can be sold the day it vests. Think of it as salary that arrives in a different envelope.</p>
+</section>
+
+<section>
+  <h2>What that adds up to</h2>
+  <p>At a $275,000 base, with the grant spread evenly over four years:</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Each year</th><th class="num">Low end</th><th class="num">High end</th></tr></thead>
+    <tbody>
+      <tr><td>Base</td><td class="num">$275,000</td><td class="num">$275,000</td></tr>
+      <tr><td>Bonus, 10 to 15 percent</td><td class="num">$27,500</td><td class="num">$41,250</td></tr>
+      <tr><td>Stock vesting that year, sellable</td><td class="num">$125,000</td><td class="num">$200,000</td></tr>
+      <tr class="total"><td>Total per year</td><td class="num">$427,500</td><td class="num">$516,250</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Over four years</th><th class="num">Low end</th><th class="num">High end</th></tr></thead>
+    <tbody>
+      <tr><td>Base</td><td class="num">$1,100,000</td><td class="num">$1,100,000</td></tr>
+      <tr><td>Bonus</td><td class="num">$110,000</td><td class="num">$165,000</td></tr>
+      <tr><td>Stock, at today's grant value</td><td class="num">$500,000</td><td class="num">$800,000</td></tr>
+      <tr class="total"><td>Total over four years</td><td class="num">$1,710,000</td><td class="num">$2,065,000</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note">These are pre-tax figures, the same way a salary number is. The stock is taxed as income when it vests, like a bonus.</p>
+</section>
+
+<section>
+  <h2>If the stock moves</h2>
+  <p>A grant is set in dollars on the day you join, then turned into a number of shares at that day's price. From then on the shares move with the market, in both directions. Two simple cases, on the same four years:</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Four years, if the stock</th><th class="num">Stock is worth</th><th class="num">Total comp becomes</th></tr></thead>
+    <tbody>
+      <tr><td>Halves</td><td class="num">$250,000 to $400,000</td><td class="num">$1,460,000 to $1,665,000</td></tr>
+      <tr><td>Stays where it is</td><td class="num">$500,000 to $800,000</td><td class="num">$1,710,000 to $2,065,000</td></tr>
+      <tr><td>Doubles</td><td class="num">$1,000,000 to $1,600,000</td><td class="num">$2,210,000 to $2,865,000</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>The point is not the upside. The point is that even in the bad case the stock is real money you can sell, and the cash part of the package keeps paying either way. Most engineers also get a fresh grant each year as a refresher, which this page leaves out so the numbers stay conservative.</p>
+</section>
+
+<section>
+  <h2>The stock you would leave behind</h2>
+  <p>The hardest part of leaving any private company is the unvested equity. Three questions tell you what it is really worth:</p>
+  <ul>
+    <li><strong>When did the company last raise money, and at what price?</strong> A valuation that has not been refreshed in years is an old number, not a current one.</li>
+    <li><strong>Is there a buyer or an exit in sight?</strong> Private shares turn into money only at a sale, a listing, or a company-run buyback. If none of those is on the calendar, the shares have no date.</li>
+    <li><strong>Can you sell any of it today?</strong> If the answer is no, then every year you stay is a year of waiting, paid for with the difference in cash.</li>
+  </ul>
+  <div class="callout">
+    <p><strong>You do not have to eat that loss.</strong> It is normal, and expected at the Staff level, to ask the new company to cover the value of the unvested equity you walk away from, usually as a sign-on payment or a larger first grant. Circle has said compensation in this seat is flexible for the right person. To make that ask you need four numbers from your current company: how many options or shares you were granted, your strike price, how much is vested versus unvested, and the most recent internal share price. Bring those and the conversation becomes a straightforward negotiation.</p>
+  </div>
+</section>
+
+<section>
+  <h2>How to look at the company</h2>
+  <ul>
+    <li><strong>It is a leadership seat.</strong> Staff at Circle means setting direction for a platform other engineers build on, not carrying a ticket queue. That scope is the reason the stock piece is sized the way it is.</li>
+    <li><strong>The money is on the table now, not at a future exit.</strong> Cash and sellable stock, from the first vest.</li>
+    <li><strong>Nothing here is a commitment.</strong> One conversation with the team gets you the real number for your situation, including what they would do about your unvested equity. You can walk away after that with full information instead of a guess.</li>
+  </ul>
+  <p class="close">Worth one call before you close the door.</p>
+</section>
+</div>
+
+</body></html>
